@@ -3,7 +3,7 @@ from ansk import make_keys
 
 def give_exam():
     num=0
-    numpq=float(input("Input marks / questions:\n"))
+    numpq=float(input("Please tell us how many mark(x) each question would carry...\n"))
     ded=float(input("Input marks to be deducted for each question answered wrong (if any):\n"))
     answer_keys=make_keys()
     print("#####################################\n\n\n\n")
@@ -12,7 +12,10 @@ def give_exam():
         if answer_keys[i]==v:
             num+=numpq
         else:
-            num-=ded
+            if v==" ":
+                num-=0
+            else:
+                num-=ded
     return num
 
 
