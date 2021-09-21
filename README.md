@@ -2,4 +2,6 @@ This is a simple terminal python script/app which can evaluate your home-mcq exa
 
 run:
 
-python main.py
+```bash
+make run
+```
