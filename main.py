@@ -1,8 +1,6 @@
 from ans import make_dict
 from ansk import make_keys
 
-app=Flask(__name__)
-
 mistakes = list()
 def give_exam():
     num=0
